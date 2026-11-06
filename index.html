@@ -1,639 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="da">
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Jozsef Bali - Datatekniker i programmering</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.ico" rel="icon">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jozsef Bali – Datatekniker i programmering</title>
+<meta name="description" content="Jozsef Bali, datatekniker med speciale i programmering. C#, ASP.NET, Angular, MSSQL og Unity.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/styles.css">
 </head>
+<body>
+<div class="layout">
+<aside>
+  <a class="brand" href="#hero-section">jbali<span>@</span>dev</a>
+  <ul class="tree" aria-label="Navigation">
+    <li><span class="t">~/</span></li>
+    <li><span class="t">├─ </span><a href="#om">om</a></li>
+    <li><span class="t">├─ </span><a href="#resume">resumé</a></li>
+    <li><span class="t">├─ </span><a href="#projekter">projekter</a></li>
+    <li><span class="t">└─ </span><a href="#kontakt">kontakt</a></li>
+  </ul>
+  <div class="side-foot">
+    <div class="st"><span class="dot"></span>jobsøgende</div>
+    <button id="theme" type="button" aria-label="Skift mellem mørkt og lyst tema">tema</button>
+  </div>
+</aside>
 
-<!--oncontextmenu="disableRightClick(event)" -->
-
-<body class="index-page" oncontextmenu="disableRightClick(event)">
-
-  <header id="header" class="header d-flex flex-column">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
-
-    <div class="profile-img">
-      <img src="assets/img/Jozsef.png" alt="" class="img-fluid rounded-circle">
+<main id="top">
+  <section class="hero" id="hero-section">
+    <div class="section-content">
+      <p class="cmd"><b>$</b> <i>whoami</i></p>
+      <h1><span id="typed"></span><span class="cursor" aria-hidden="true"></span></h1>
+      <div class="role">datatekniker · softwareudvikler</div>
+      <p>Jeg bygger webapplikationer, API’er og spil med C#, .NET og Angular. Uddannet fra TEC i København og klar til at komme i gang.</p>
+      <div class="links">
+        <a href="https://github.com/Fenrir-Codes">github</a>
+        <a href="https://www.linkedin.com/in/jozsef-bali-b66164215/">linkedin</a>
+        <a href="mailto:vorago01@gmail.com">vorago01@gmail.com</a>
+      </div>
     </div>
+  </section>
 
-    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <!-- Uncomment the line below if you also wish to use an image logo -->
-      <img src="" alt="">
-      <h1 class="sitename">Jozsef Bali</h1>
-    </a>
+  <section id="om">
+    <div class="section-content">
+      <p class="cmd"><b>$</b> <i>cat om.md</i></p>
+      <p>Jeg elsker at tage en idé og gøre den til virkelighed, hvad enten det er et spil eller en løsning, der gør arbejdsdagen lettere. Min ekspertise omfatter <strong>C#</strong>, <strong>ASP.NET</strong>, <strong>Entity Framework</strong>, <strong>Angular</strong> og <strong>MSSQL</strong>.</p>
+      <p>Jeg arbejder struktureret, lærer hurtigt og trives i agile miljøer, hvor samarbejde og præcision tæller. Min drøm er <strong>spiludvikling</strong>, men jeg er også åben for webapplikationer og andre softwareløsninger.</p>
+      <p>Som arbejdsgiver kan I vurdere mig risikofrit via A-kassens <strong>4-ugers løntilskudsordning</strong>, før I beslutter jer for en fastansættelse.</p>
+      <dl class="kv">
+        <dt>uddannelse</dt><dd>Datatekniker med speciale i programmering (12-tal)</dd>
+        <dt>by</dt><dd>København, Danmark</dd>
+        <dt>tlf.</dt><dd><a href="tel:+4542997526">+45 42 99 75 26</a></dd>
+      </dl>
 
-    <div class="social-links text-center">
-      <a href="https://github.com/Fenrir-Codes" class="facebook" target="_blank"><i class="bi bi-github"></i></a>
-      <a href="https://www.linkedin.com/in/jozsef-bali-b66164215/" class="linkedin" target="_blank"><i
-          class="bi bi-linkedin"></i></a>
+      <p class="cmd" style="margin-top:2rem"><b>$</b> <i>ls skills/</i></p>
+      <dl class="ls">
+        <dt>backend/</dt><dd><span>C#</span><span>.NET</span><span>ASP.NET Core</span><span>Blazor</span><span>Entity Framework</span><span>REST API</span></dd>
+        <dt>frontend/</dt><dd><span>Angular</span><span>TypeScript</span><span>JavaScript</span><span>HTML</span><span>CSS/SCSS</span><span>Bootstrap</span></dd>
+        <dt>data/</dt><dd><span>MSSQL</span><span>VMware</span><span>Windows</span><span>Backup</span></dd>
+        <dt>andet/</dt><dd><span>Unity</span><span>Python</span><span>C++</span><span>Java</span><span>Arduino</span></dd>
+      </dl>
     </div>
+  </section>
 
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="#about" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-        <!-- <li><a href="#about"><i class="bi bi-person navicon"></i> Om mig</a></li> -->
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resumé</a></li>
-        <li><a href="#projects"><i class="bi bi-file-earmark-text navicon"></i> Projekter</a></li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Kontakt</a></li>
+  <section id="resume">
+    <div class="section-content">
+      <p class="cmd"><b>$</b> <i>git log --erfaring</i></p>
+      <ul class="log">
+        <li><div class="d">2025</div><div><h3>IT-tekniker</h3><div class="w">PC-Service Center Hellerup</div>
+          <p>Fejlfinding og reparation af pc’er, bærbare, smartphones og Apple-produkter.</p></div></li>
+        <li><div class="d">2021 – 2024</div><div><h3>Softwareudvikler, full-stack</h3><div class="w">Skolepraktik, TEC Ballerup</div>
+          <p>Fem års praktikforløb med projekter fra C#-grundlæggende til Angular, ASP.NET Core og Blazor.</p></div></li>
       </ul>
-    </nav>
-    <div class="container d-flex flex-column align-items-center pt-1 pb-1">
-      <h5>Oversætte</h5>
-      <div id="googleTranslate"></div>
+
+      <p class="cmd" style="margin-top:1.75rem"><b>$</b> <i>git log --uddannelse</i></p>
+      <ul class="log">
+        <li><div class="d">2019 – 2024</div><div><h3>Datatekniker med speciale i programmering</h3><div class="w">Technical Education Copenhagen (12)</div></div></li>
+        <li><div class="d">2018 – 2019</div><div><h3>Elektriker, grundforløb</h3><div class="w">Technical Education Copenhagen (10)</div></div></li>
+      </ul>
+
+      <p class="cmd" style="margin-top:1.75rem"><b>$</b> <i>ls praktik/</i></p>
+      <details><summary>P1–P3 · C#, WPF, ASP.NET &amp; Angular</summary><p>Objektorienteret programmering, dating-app i WPF, movie-site i Angular.</p></details>
+      <details><summary>P4–P6 · Java, Unity, ASP.NET Core &amp; ElevPortalen</summary><p>Svendeprøveprojekt i Blazor, Bootstrap og EF Core mod SQL Server.</p></details>
     </div>
-  </header>
+  </section>
 
-  <main class="main">
-
-    <!-- Hero Section -->
-    <!--     <section id="hero" class="hero section">
-
-      <img src="assets/img/neuralink.gif" alt="" data-aos="fade-in" class="">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h2>Jozsef Bali</h2>
-        <p>Jeg er <span class="typed" data-typed-items="Datatekniker, Softwareudvikler"></span>
-          <span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span
-            class="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
-        </p>
+  <section id="projekter">
+    <div class="section-content">
+      <p class="cmd"><b>$</b> <i>tree projekter/</i></p>
+      <div class="proj-grid">
+        <a class="proj" href="https://github.com/Fenrir-Codes/WeatherTrackerAPI"><span class="n">weather-tracker/</span> <span class="s">API · frontend</span><p>Vejrapplikation med eget API og frontend.</p></a>
+        <a class="proj" href="https://github.com/Fenrir-Codes/H6-Afs-Projekt"><span class="n">elevportalen/</span> <span class="s">Blazor · C# · MSSQL</span><p>Svendeprøveprojekt: webapplikation til elevforløb.</p></a>
+        <a class="proj" href="https://github.com/Fenrir-Codes/V-Logger"><span class="n">v-logger/</span> <span class="s">logging</span><p>Værktøj til logning.</p></a>
+        <a class="proj" href="https://github.com/Fenrir-Codes/BynaryClock"><span class="n">binary-clock/</span> <span class="s">binært ur</span><p>Et ur, der viser tiden i binære tal.</p></a>
       </div>
-
-    </section> --><!-- /Hero Section -->
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Om</h2>
-        <p>Mit navn er Jozsef, og jeg er en uddannet softwareudvikler med en stærk passion for at udvikle innovative og
-          effektive softwareløsninger. Min ekspertise omfatter <strong>C#</strong>, <strong>ASP.NET</strong> ,
-          <strong>Entity
-            Framework</strong>, <strong>Angular</strong> og <strong>MSSQL</strong>, hvilket gør mig i stand til at
-          udvikle skalerbare og
-          vedligeholdelsesvenlige applikationer. Jeg har også erfaring med <strong>RESTful API udvikling</strong>,
-          intuitive brugeroplevelser og velstrukturerede backend-systemer, debugging,
-          problemløsning og <strong>spiludvikling i Unity</strong>.
-        </p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4">
-            <img src="assets/img/Svendebrev-Jozsef.png" class="img-fluid mt-2" alt="Gradu">
-          </div>
-          <div class="col-lg-4">
-            <img src="assets/img/Jozsef.png" class="img-fluid mt-2" alt="Joseph" style="border-radius: 50%;">
-          </div>
-          <div class="col-lg-4 content">
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <strong>Fødselsdag:</strong> <span>24 Maj 1983</span></li>
-              <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong>
-                <span>www.fenrir-codes.github.io/jozsefbali</span>
-              </li>
-              <li><i class="bi bi-chevron-right"></i> <strong>Tlf.:</strong> <span>+45 42 99 75 26</span></li>
-              <li><i class="bi bi-chevron-right"></i> <strong>By:</strong> <span>København, Danmark</span></li>
-              <li><i class="bi bi-chevron-right"></i> <strong>Alder:</strong> <span>42</span></li>
-              <li><i class="bi bi-chevron-right"></i> <strong>Grad:</strong> <span>Erhvervsuddannelse</span></li>
-              <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>vorago01@gmail.com</span></li>
-              <li><i class="bi bi-chevron-right"></i> <strong>Ledig:</strong> <span>Jobsøgende</span></li>
-            </ul>
-          </div>
-          <div class="col-lg-12 content py-3">
-            <h2>Datatekniker &amp; Web, Software Udvikler.</h2>
-            <p class="fst-italic py-0">
-              Jeg har erfaring med <strong>C#</strong>, <strong>.NET</strong>, <strong>ASP.NET </strong>,<strong>
-                Angular</strong>, <strong>TypeScript</strong>,<strong> SQL</strong> og udvikling af skalérbare
-              webapplikationer.
-              Jeg har også arbejdet med Unity-spiludvikling, hvilket har styrket mine evner inden for problemløsning og
-              kreativ tænkning.
-
-              Min baggrund omfatter desuden erfaring med frontend-teknologier (HTML, CSS, SCSS, JavaScript),
-              databaseoptimering samt RESTful API-udvikling. Jeg har også grundlæggende viden om serveradministration,
-              sikkerhed og netværksinfrastruktur.</br></br>
-
-              Derudover har jeg et grundlæggende kendskab
-              til <strong>C++</strong> og <strong>Java</strong>, som jeg har anvendt i
-              forbindelse med Arduino-projekter og mobiludvikling. Selvom min erfaring med disse sprog
-              er begrænset, ser jeg det ikke som en udfordring at lære dem i dybden og anvende dem i praksis.
-              </br></br>
-              Det, der driver mig, er muligheden for at løse problemer og skabe brugervenlige løsninger. Jeg elsker at
-              tage en idé og gøre den til virkelighed –
-              hvad enten det er et spil, der bringer glæde til brugerne, eller en softwareløsning, der optimerer
-              arbejdsprocesser.
-
-              Jeg er lærerig, tilpasningsdygtig og nysgerrig, og jeg tilegner mig hurtigt ny viden. Jeg trives i et
-              agilt udviklingsmiljø,
-              hvor samarbejde, kreativitet og præcision er nøgleelementer.
-              </br></br>
-              Som udvikler fokuserer jeg på at levere stabile, intuitive og effektive løsninger, der skaber værdi. Jeg
-              arbejder struktureret, overholder deadlines og bidrager med en positiv og motiverende tilgang.
-              Jeg drømmer om at arbejde inden for spiludvikling, men jeg er også åben for at udvikle webapplikationer og
-              andre softwareløsninger, hvor jeg kan gøre en forskel.
-              Mit mål er at bidrage til udviklingen af teknologi, der enten underholder eller gør hverdagen lettere for
-              brugerne.
-
-              Jeg drømmer om at arbejde inden for spiludvikling, men jeg er også åben for at udvikle webapplikationer og
-              andre softwareløsninger,
-              hvor jeg kan gøre en forskel. Mit ultimative mål er at udvikle teknologi,
-              der enten underholder eller forbedrer hverdagen for brugerne.
-              </br></br>
-              Som kollega er jeg kendt for at være positiv, selvstændig, struktureret og logisk tænkende. Jeg har en
-              stærk fokus på problemløsning
-              og er dedikeret til at holde mig opdateret med den nyeste viden inden for IT.
-              Jeg er ansvarsbevidst, mødestabil, udadvendt, serviceminded, kompetent og yderst pligtopfyldende.
-            </p>
-            <p>Jeg vægter ærlighed, troværdighed og veludført arbejde som mine kerneværdier.
-              Jeg har afsluttet min uddannelse med fremragende resultater, og jeg tilbyder en risikofri mulighed for at
-              vurdere mit potentiale via A-kassens
-              4-ugers løntilskudsordning. Dette giver jer chancen for at se mine kompetencer
-              i praksis uden omkostninger, før I beslutter jer for en fastansættelse.
-            </p>
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /About Section -->
-
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Resumé</h2>
-        <p>Engageret og løsningsorienteret softwareudvikler med en stærk teknisk baggrund og stor
-          passion for IT-drift og infrastruktur. Uddannet fra TEC med fokus på C#, ASP.NET ,
-          JavaScript, TypeScript og Python. Har solid erfaring med enterprise-setup, Windows-miljøer
-          og virtualisering med VMware.Praktisk erfaring som IT-tekniker med fejlfinding, backupløsninger og
-          datasikring.Struktureret, kvalitetsbevidst og vant til at arbejde selvstændigt
-          såvel som i teams. 25+ års personlig interesse for hardware og teknologi. Trives i teknisk
-          komplekse miljøer og brænder for at finde robuste løsninger. Søger faglige udfordringer og et
-          stærkt kollegialt fællesskab. Klar til at bidrage med engagement og teknisk indsigt i et
-          professionelt setup.
-
-          Jeg blev færdiguddannet i sommeren 2024 efter en femårig uddannelse,
-          der omfattede både praktik- og skoleperioder, hvor jeg arbejdede på en række forskellige projekter.
-        </p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-            <h3 class="resume-title">Uddannelse</h3>
-            <div class="resume-item">
-              <h4>Datatekniker med specielle i programmering</h4>
-              <h5>2019 oktober - 2024 november</h5>
-              <h5><em>Technical Education Copenhagen, København, DK</em></h5>
-              <ul>
-                <li>Fuldført uddannelse med fremragende resultater (12)</li>
-                <li>I øjeblikket er jeg stadig i praktik på praktikcenter Ballerup indtil november</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Elektriker grundforløb</h4>
-              <h5>2018 februar - 2019 oktober</h5>
-              <h5><em>Technical Education Copenhagen, København, DK</em></h5>
-              <ul>
-                <li>Fuldført uddannelse med god resultater (10)</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Førstehjælp og brandbekæmpelse</h4>
-              <h5>2018</h5><br>
-              <h5><em>Technical Education Copenhagen, København, DK</em></h5>
-              <ul>
-                <li>Fuldført uddannelse</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>9 klasse</h4>
-              <h5>2017 - 2018</h5>
-              <h5><em>KVUC, København, DK</em></h5>
-              <ul>
-                <li>Fuldført uddannelse med god resultater (10)</li>
-                <li>Primære fag var dansk og matematik</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Forberedne voksen uddannelse trin 3 og 4</h4>
-              <h5>2017</h5><br>
-              <h5><em>KVUC, København, DK</em></h5><br>
-              <ul>
-                <li>Fuldført uddannelse</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Webudvikling</h4>
-              <h5>2001 maj - 2002 maj</h5><br>
-              <h5><em>2f datalogi skole, Mosonmagyaróvár, HU</em></h5>
-              <ul>
-                <li>Fuldført uddannelse</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <h3 class="resume-title">Referencer</h3>
-            <div class="resume-item">
-              <h4>Rami Andreas El Said</h4>
-              <h5>Praktikcenter instruktør, TEC Ballerup </h5>
-              <ul>
-                <li>Email: reds@tec.dk</li>
-                <li>Telefon: +45 25 45 36 22</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-            <div class="resume-item">
-              <h4>Noree Ismael</h4>
-              <h5>Praktikcenter Koordinator, TEC Ballerup </h5>
-              <ul>
-                <li>Email: ni@tec.dk</li>
-                <li>Telefon: +45 25 45 32 04</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Erfaring</h3>
-            <div class="resume-item">
-              <h4>IT-Tekniker</h4>
-              <h5>2025</h5>
-              <ul>
-                <p><em>PC-Service Center Hellerup, København, DK </em></p>
-              </ul>
-            </div><!-- Edn Resume Item -->
-            <div class="resume-item">
-              <h4>Praktikforløb som Softwareudvikler</h4>
-              <h5>2019 - 2024 November</h5>
-              <ul>
-                <p><em>TEC Ballerup, Telegrafvej 9, København, DK </em></p>
-              </ul>
-            </div><!-- Edn Resume Item -->
-            <div class="resume-item">
-              <h4>Grundforløb</h4>
-              <ul>
-                <p>Det første år af min uddannelse deltog jeg i et grundforløb, hvor jeg skulle vælge et hovedfag.
-                  Jeg valgte programmeringsvejen, da jeg har haft en interesse for programmering siden teenageårene.</p>
-              </ul>
-            </div><!-- Edn Resume Item -->
-            <div class="resume-item">
-              <h4>Praktikforløb - P1</h4>
-              <ul>
-                <p>I løbet af de fem år på TEC Ballerup har jeg deltaget i forskellige projekter.
-                  På første hovedforløb fokuserede vi på grundlæggende programmering i C#. </p>
-              </ul>
-            </div><!-- Edn Resume Item -->
-            <div class="resume-item">
-              <h4>Praktikforløb - P2</h4>
-              <ul>
-                <p>Under praktikforløb 2 lærte jeg objektorienteret programmering (OOP), objektorienteret analyse og
-                  design (OOAD), objektorienteret design (OOD),
-                  Android-programmering,
-                  ASP.NET og databaseprogrammering i C#.
-                  Hovedforløb 2 omfattede primært WPF og OOP i C#, da vi skulle udvikle en dating-app som en del af
-                  vores projekt.</p>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Praktikforløb - P3</h4>
-              <ul>
-                <p>
-                  Under praktikforløb 3 blev vi påvirket af COVID-19, hvilket betød en del hjemmearbejde, hvor jeg øvede
-                  mig på Angular,
-                  som var en del af pensum på Hovedforløb 3. Da jeg påbegyndte Hovedforløb 3, skulle jeg anvende de
-                  kompetencer,
-                  jeg havde tilegnet mig under praktikforløbet.
-                  Mit projekt var at udvikle en movie-site, hvor jeg lærte at oprette et API i C# og vise data på
-                  hjemmesiden.
-                </p>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Praktikforløb - P4</h4>
-              <ul>
-                <p>
-                  På praktikforløb 4 var COVID-19 stadig en udfordring, så de første par måneder arbejdede jeg
-                  hjemmefra.
-                  Teamwork var essentielt, og vi blev opfordret til at danne grupper på op til tre personer med vores
-                  kolleger.
-                  Projektet skulle inkludere Angular og TypeScript. Hovedforløb 4 fokuserede primært på
-                  app-programmering i Java og Android-programmering,
-                  og jeg modtog også undervisning i at skrive kravspecifikationer.
-                  Derudover fik jeg mulighed for at lege med Unity til spiludvikling, hvilket gav mig en spændende
-                  indsigt i spilprogrammering.
-                </p>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Praktikforløb - P5</h4>
-              <ul>
-                <p>
-                  På praktikforløb 5 var planen at begynde på vores svendeprøveprojekt,
-                  hvilket blev mit fokus resten af praktikforløbet. I hovedforløb 5 lærte jeg om serversidekryptering,
-                  ASP.NET Core og projektstyring.
-                </p>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Afsluttende prøve periode - P6</h4>
-              <ul>
-                <p>
-                  I denne sidste periode arbejdede jeg videre på eksamensopgaven, ElevPortalen.
-                  ElevPortalen er en webapplikation bygget i Blazor med C# som både front- og backend-sprog.
-                  Vi brugte Bootstrap til at forenkle designprocessen og sikre et ensartet design på hele siden.
-                  Til databasekommunikation anvendte vi Entity Framework, hvilket gjorde det muligt at interagere
-                  direkte med databaserne uden mellemlag.
-                  Databasen blev oprettet ved hjælp af kode gennem Entity Framework ved brug af kode-først-princippet,
-                  som automatisk genererede databaser og tabeller. Vores system benyttede Microsoft SQL Server (MSSQL)
-                  til databaser.
-                </p>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <h3 class="resume-title">Erverhvserfaring</h3>
-            <div class="resume-item">
-              <h4>IT-Tekniker</h4>
-              <h5>2025</h5><br>
-              <h5><em>PC-Service Center Hellerup, København, DK</em></h5>
-              <ul>
-                <li>Som IT tekniker er jeg ansvarlig for diagnosticering, reparation og vedligeholdelse af en bred
-                  vifte af enheder, herunder stationære pc’er, bærbare computere, smartphones og Apple
-                  produkter som MacBooks og iPhones. Mine opgaver omfatter fejlfinding på hardware og
-                  software, systemopgraderinger, gendannelse af data og sikring af optimal ydeevne på
-                  kundernes enheder. Jeg yder også grundlæggende brugersupport og sørger for, at alle
-                  reparationer lever op til gældende kvalitets og sikkerhedsstandarder.
-                </li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-            <div class="resume-item">
-              <h4>Software Udviklink Full-Stack</h4>
-              <h5>2021 - 2024 december</h5><br>
-              <h5><em>Skolepraktik TEC Ballerup, DK</em></h5>
-            </div><!-- Edn Resume Item -->
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Resume Section -->
-
-    <!-- Projects section -->
-    <section id="projects" class="resume section">
-
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Projekter</h2>
-        Et par skoleprojekter, jeg arbejdede på.
-      </div><!-- End Section Title -->
-
-      <div class="container">
-        <div class="row d-flex justify-content-center px-2">
-
-          <div class="col-lg-5 col-md-12 col-sm-12 box-item">
-            <div class="thumbnail text-center">
-              <a href="https://github.com/Fenrir-Codes/WeatherTrackerAPI" target="_blank">
-                <img class="img-responsive imageinbox" src="assets/img/WeatherTrackerImage.png"
-                  alt="Weather Tracker API + Frontend">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-5 col-md-12 col-sm-12 box-item">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item youtube"
-                src="https://youtube.com/embed/IPTB6P8Na5s?si=2gzavIE62OftnH6s" title="MAUI app"
-                allowfullscreen></iframe>
-            </div>
-          </div>
-
-          <div class="col-lg-5 col-md-12 col-sm-12 box-item">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item youtube"
-                src="https://www.youtube.com/embed/_EOfs5bfxaw?si=ajmbNn5lNCF6Z44U&amp;start=13" title="LAX project"
-                allowfullscreen></iframe>
-            </div>
-          </div>
-
-          <div class="col-lg-5 col-md-12 col-sm-12 box-item">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item youtube"
-                src="https://www.youtube.com/embed/1y4VOFROKt8?si=xEY8TT5qWZSpM2Gj&amp;start=2" title="CMIS"
-                allowfullscreen></iframe>
-            </div>
-          </div>
-
-          <div class="col-lg-5 col-md-12 col-sm-12 box-item">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item youtube"
-                src="https://www.youtube.com/embed/h93FclmUn7Q?si=dhYVfKUnfSgZNX9I&amp;start=321"
-                title="Unity Helvete project" allowfullscreen></iframe>
-            </div>
-          </div>
-
-          <div class="col-lg-5 col-md-12 col-sm-12 box-item">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item youtube"
-                src="https://www.youtube.com/embed/aQh4S-tAzMw?si=8E2dD67Usjn-GWNj&amp;start=480"
-                title="Unity Helvete project" allowfullscreen></iframe>
-            </div>
-          </div>
-
-          <div class="col-lg-5 col-md-12 col-sm-12 box-item">
-            <div class="thumbnail text-center">
-              <a href="https://github.com/Fenrir-Codes/V-Logger" target="_blank">
-                <img class="img-responsive imageinbox" src="assets/img/VLogger.png">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-5 col-md-12 col-sm-12 box-item">
-            <div class="thumbnail text-center">
-              <a href="https://github.com/Fenrir-Codes/BynaryClock" target="_blank">
-                <img class="img-responsive imageinbox" src="assets/img/binaryClock.png">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-5 col-md-12 col-sm-12 text-center box-item">
-            <a href="https://github.com/Fenrir-Codes/H6-Afs-Projekt" target="_blank">
-              <img class="img-responsive imageinbox" src="assets/img/Elevportalen.png">
-            </a>
-          </div>
-
-          <div class="col-lg-5 col-md-12 col-sm-12 box-item">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item youtube"
-                src="https://www.youtube.com/embed/Mm4eFVDulLw?si=LJvQMTBBjbUg8EQ8&amp;start=0"
-                title="Unity Helvete project" allowfullscreen></iframe>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <div class="container section-title" data-aos="fade-up">
-      </div><!-- End Section Title -->
-    </section>
-    <!-- End Projects section -->
-
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-5">
-
-            <div class="info-wrap">
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>Addresse</h3>
-                  <p>Mjølnerparken 78, 4.TH. 2200 København N</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                <i class="bi bi-telephone flex-shrink-0"></i>
-                <div>
-                  <h3>Telefon</h3>
-                  <p>+45 42 99 75 26</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h3>Email</h3>
-                  <p>vorago01@gmail.com</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17983.82607864967!2d12.5502321!3d55.70674965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4652524ed8dafa11%3A0xc5d62a24362864c1!2sMj%C3%B8lnerparken%2078%2C%202200%20K%C3%B8benhavn!5e0!3m2!1shu!2sdk!4v1719422210426!5m2!1shu!2sdk"
-                frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-              </iframe>
-
-            </div>
-          </div>
-
-          <div class="col-lg-7">
-            <form action="https://api.web3forms.com/submit" method="POST" class="php-email-form" data-aos="fade-up"
-              data-aos-delay="200">
-              <div class="row gy-4">
-
-                <input type="hidden" name="access_key" value="a810c507-fd36-4444-b7bd-8319809036b5">
-                <input type="hidden" name="from_name" value="FromMyPersonalPage">
-                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                <input type="hidden" name="redirect" value="https://fenrir-codes.github.io/jozsefbali/thanks.html">
-
-                <div class="col-md-6">
-                  <label for="name-field" class="pb-2">Dit navn</label>
-                  <input type="text" name="name" id="name-field" class="form-control" required>
-                </div>
-
-                <div class="col-md-6">
-                  <label for="email-field" class="pb-2">Din Email</label>
-                  <input type="email" class="form-control" name="email" id="email-field" required>
-                </div>
-
-                <div class="col-md-12">
-                  <label for="subject-field" class="pb-2">Emne</label>
-                  <input type="text" class="form-control" name="subject" id="subject-field" required>
-                </div>
-
-                <div class="col-md-12">
-                  <label for="message-field" class="pb-2">Message</label>
-                  <textarea class="form-control" name="message" rows="10" id="message-field" required></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <button type="submit" class="submitformbutton">Send Message</button>
-                </div>
-
-              </div>
-            </form>
-          </div><!-- End Contact Form -->
-
-        </div>
-
-      </div>
-
-      <div class="container section-title" data-aos="fade-up">
-      </div><!-- End Section Title -->
-
-    </section><!-- /Contact Section -->
-
-
-  </main>
-
-
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-  <script type="text/javascript"
-    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      <p class="cmd" style="margin-top:2rem"><b>$</b> <i>./demo-videoer</i></p>
+      <div class="vids" id="vids"></div>
+    </div>
+  </section>
+
+  <section id="kontakt">
+    <div class="section-content">
+      <p class="cmd"><b>$</b> <i>./kontakt.sh</i></p>
+      <p>Skriv til mig på <a href="mailto:vorago01@gmail.com">vorago01@gmail.com</a> eller ring på <a href="tel:+4542997526">+45 42 99 75 26</a>. Du kan også prøve terminalen: skriv <strong>help</strong>.</p>
+      <div class="out" id="out" aria-live="polite"></div>
+      <label class="prompt-line"><span>$</span><input id="cmd" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Terminal-kommando" placeholder="help"></label>
+      
+      <footer>© 2026 Jozsef Bali · [STATUS: ONLINE] · v1.0.0</footer>
+    </div>
+  </section>
+</main>
+</div>
+
+<script src="scripts/script.js"></script>
 </body>
-
 </html>
