@@ -27,26 +27,6 @@
     })();
   }
 
-  /* YouTube videók betöltése kattintásra a HTML-ben lévő gombokról */
-  var vidButtons = document.querySelectorAll("#vids .vid-btn");
-  vidButtons.forEach(function(btn){
-    btn.addEventListener("click", function(){
-      var videoId = btn.getAttribute("data-id");
-      var startSec = btn.getAttribute("data-start") || 0;
-      var titleText = btn.textContent;
-
-      var f = document.createElement("iframe");
-      f.className = "vid";
-      f.title = titleText;
-      f.allowFullscreen = true;
-      f.loading = "lazy";
-      f.src = "https://www.youtube.com/embed/" + videoId + "?start=" + startSec + "&autoplay=1";
-      f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
-      
-      btn.replaceWith(f);
-    });
-  });
-
   /* Sima gördülés a menüpontokra kattintáskor */
   var links = [].slice.call(document.querySelectorAll(".tree a"));
   var brandLink = document.querySelector(".brand");
@@ -102,16 +82,18 @@
     skills: "C#, .NET, ASP.NET Core, Blazor, Entity Framework, Angular, TypeScript, MSSQL, REST API, Unity",
     projects: "weather-tracker/\nelevportalen/\nv-logger/\nbinary-clock/",
     status: "Jobsøgende. Åben for løntilskud (4 uger) via A-kasse.",
-    contact: "vorago01@gmail.com · +45 42 99 75 26"
+    contact: "vorago01@gmail.com"
   };
 
-  cmd.addEventListener("keydown", function(e){
-    if (e.key !== "Enter") return;
-    var c = cmd.value.trim().toLowerCase();
-    cmd.value = "";
-    if (!c) return;
-    if (c === "clear"){ out.textContent = ""; return; }
-    out.textContent += "$ " + c + "\n" + (cmds[c] || ("kommando ikke fundet: " + c + ". Skriv help.")) + "\n";
-    out.scrollTop = out.scrollHeight;
-  });
+  if(cmd && out){
+    cmd.addEventListener("keydown", function(e){
+      if (e.key !== "Enter") return;
+      var c = cmd.value.trim().toLowerCase();
+      cmd.value = "";
+      if (!c) return;
+      if (c === "clear"){ out.textContent = ""; return; }
+      out.textContent += "$ " + c + "\n" + (cmds[c] || ("kommando ikke fundet: " + c + ". Skriv help.")) + "\n";
+      out.scrollTop = out.scrollHeight;
+    });
+  }
 })();
