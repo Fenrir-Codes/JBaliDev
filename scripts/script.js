@@ -27,32 +27,24 @@
     })();
   }
 
-  /* YouTube beágyazott videók betöltése */
-  var vids = [
-    ["IPTB6P8Na5s", 0, "Weather Tracker"],
-    ["_EOfs5bfxaw", 13, "Lax-Database"],
-    ["1y4VOFROKt8", 2, "CMIS-Guest Register"],
-    ["h93FclmUn7Q", 321, "Unity3D-Helvete"],
-    ["aQh4S-tAzMw", 480, "Unity3D-COD like Mistery Box"],
-    ["Mm4eFVDulLw", 0, "Chrome Guard"]
-  ];
-  var box = document.getElementById("vids");
-  vids.forEach(function(v){
-    var b = document.createElement("button");
-    b.type = "button";
-    b.className = "vid vid-btn";
-    b.textContent = "▶ " + v[2];
-    b.addEventListener("click", function(){
+  /* YouTube videók betöltése kattintásra a HTML-ben lévő gombokról */
+  var vidButtons = document.querySelectorAll("#vids .vid-btn");
+  vidButtons.forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var videoId = btn.getAttribute("data-id");
+      var startSec = btn.getAttribute("data-start") || 0;
+      var titleText = btn.textContent;
+
       var f = document.createElement("iframe");
       f.className = "vid";
-      f.title = v[2];
+      f.title = titleText;
       f.allowFullscreen = true;
       f.loading = "lazy";
-      f.src = "https://www.youtube.com/embed/" + v[0] + "?start=" + v[1] + "&autoplay=1";
-      f.allow = "autoplay; encrypted-media; picture-in-picture";
-      b.replaceWith(f);
+      f.src = "https://www.youtube.com/embed/" + videoId + "?start=" + startSec + "&autoplay=1";
+      f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+      
+      btn.replaceWith(f);
     });
-    box.appendChild(b);
   });
 
   /* Sima gördülés a menüpontokra kattintáskor */
@@ -118,7 +110,7 @@
     var c = cmd.value.trim().toLowerCase();
     cmd.value = "";
     if (!c) return;
-    if (c === "clear") { out.textContent = ""; return; }
+    if (c === "clear"){ out.textContent = ""; return; }
     out.textContent += "$ " + c + "\n" + (cmds[c] || ("kommando ikke fundet: " + c + ". Skriv help.")) + "\n";
     out.scrollTop = out.scrollHeight;
   });
