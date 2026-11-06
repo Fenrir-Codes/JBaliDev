@@ -30,11 +30,11 @@
   /* YouTube beágyazott videók betöltése */
   var vids = [
     ["IPTB6P8Na5s", 0, "Weather Tracker"],
-    ["_EOfs5bfxaw", 13, "Projekt"],
-    ["1y4VOFROKt8", 2, "Projekt"],
-    ["h93FclmUn7Q", 321, "Projekt"],
-    ["aQh4S-tAzMw", 480, "Projekt"],
-    ["Mm4eFVDulLw", 0, "ElevPortalen"]
+    ["_EOfs5bfxaw", 13, "Lax-Database"],
+    ["1y4VOFROKt8", 2, "CMIS-Guest Register"],
+    ["h93FclmUn7Q", 321, "Unity3D-Helvete"],
+    ["aQh4S-tAzMw", 480, "Unity3D-COD like Mistery Box"],
+    ["Mm4eFVDulLw", 0, "Chrome Guard"]
   ];
   var box = document.getElementById("vids");
   vids.forEach(function(v){
