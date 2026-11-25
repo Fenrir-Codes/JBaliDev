@@ -23,7 +23,7 @@
   } else {
     (function tick(){
       el.textContent = name.slice(0, ++i);
-      if (i < name.length) setTimeout(tick, 90);
+      if (i < name.length) setTimeout(tick, 50);
     })();
   }
 
@@ -81,7 +81,7 @@
     whoami: "Jozsef Bali, datatekniker med speciale i programmering. København.",
     skills: "C#, .NET, ASP.NET Core, Blazor, Entity Framework, Angular, TypeScript, MSSQL, REST API, Unity",
     projects: "weather-tracker/\nelevportalen/\nv-logger/\nbinary-clock/",
-    status: "Jobsøgende. Åben for løntilskud (4 uger) via A-kasse.",
+    status: "Åben for nye muligheder :)",
     contact: "vorago01@gmail.com"
   };
 

@@ -84,7 +84,7 @@ aside {
   height: 100vh;
   background: var(--side);
   border-right: 1px solid var(--line);
-  padding: 2rem 1.5rem;
+  padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
   gap: 1.75rem;
@@ -109,7 +109,7 @@ aside {
   color: var(--dim);
   white-space: pre;
   font-size: 1.05rem;
-  line-height: 2;
+  line-height: 0.5;
 }
 
 .tree a {
